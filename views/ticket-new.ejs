@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>CMPS 415 Phase 1</title>
+    <style>
+
+      h1, h3{font size: 24px; text-align: left;}
+
+    </style>
+  </head>
+
+  <body>
+
+    <% include header.ejs %>
+
+    <h1>Ticket #<%= data.id %> has been created.</h1>
+
+    </br>
+
+    <p>
+      Thanks for submitting a new ticket <%= data.created_by %>!
+      </br>
+      We will get back to you as soon as possible.
+      </br></br>
+
+      <h3>Overview</h3>
+      <ul> ID: <%= data.id %> </ul>
+      <ul> Created At: <%= data.created_at %> </ul>
+      <ul> Updated At: <%= data.updated_at %> </ul>
+      <ul> Type: <%= data.type %> </ul>
+      <ul> Subject: <%= data.subject %> </ul>
+      <ul> Description: <%= data.description %> </ul>
+      <ul> Priority: <%= data.priority %> </ul>
+      <ul> Status: <%= data.status %> </ul>
+      <ul> Created by: <%= data.created_by %> </ul>
+      <ul> Assignee ID: <%= data.assignee_id %> </ul>
+    </p>
+
+  </body>
+
+</html>

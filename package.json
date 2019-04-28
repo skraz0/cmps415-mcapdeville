@@ -1,0 +1,22 @@
+{
+  "name": "cmps415phase1",
+  "version": "1.0.0",
+  "description": "A simple web app for tickets, made with nodejs!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cmps415",
+    "phase1",
+    "nodejs",
+    "ticketsystem"
+  ],
+  "author": "Matthew Capdeville",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

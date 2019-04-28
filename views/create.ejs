@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>CMPS 415 Phase 1</title>
+    <style>
+
+      h1{font size: 24px; text-align: left;}
+
+    </style>
+  </head>
+
+  <body>
+
+    <% include header.ejs %>
+
+    <h1>Create A New Ticket</h1>
+
+    <form action="/rest/ticket" method="post">
+      ID </br> <input type="text" name="id"> </br>
+      Created At </br> <input type="text" name="created_at"> </br>
+      Updated At </br> <input type="text" name="updated_at"> </br>
+      Type </br> <input type="text" name="type"> </br>
+      Subject </br> <input type="text" name="subject"> </br>
+      Description </br> <input type="text" name="description"> </br>
+      Priority </br> <input type="text" name="priority"> </br>
+      Status </br> <input type="text" name="status"> </br>
+      Created By </br> <input type="text" name="created_by"> </br>
+      Assignee ID </br> <input type="text" name="assignee_id"> </br></br>
+
+      <input type="submit" name="Submit">
+    </form>
+
+  </body>
+
+</html>

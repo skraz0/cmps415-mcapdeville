@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>CMPS 415 Phase 1</title>
+    <style>
+
+      h1{font size: 24px; text-align: left;}
+      ul{font size: 14px;}
+
+    </style>
+  </head>
+
+  <body>
+
+    <% include header.ejs %>
+
+    <h1>All Tickets:</h1>
+
+    <ul>
+
+      <form action="/rest/list" method="post">
+        Search Ticket ID <input type="text" name="id">
+        <input type="submit" name="Submit">
+      </form>
+      </br>
+
+      <% tickets.tickets.forEach(function(item){ %>
+        <ul> ID: <%= item.id %> </ul>
+        <ul> Created At: <%= item.created_at %> </ul>
+        <ul> Updated At: <%= item.updated_at %> </ul>
+        <ul> Type: <%= item.type %> </ul>
+        <ul> Subject: <%= item.subject %> </ul>
+        <ul> Description: <%= item.description %> </ul>
+        <ul> Priority: <%= item.priority %> </ul>
+        <ul> Status: <%= item.status %> </ul>
+        <ul> Created by: <%= item.created_by %> </ul>
+        <ul> Assignee ID: <%= item.assignee_id %> </ul>
+        </br>
+      <% }); %>
+    </ul>
+
+  </body>
+
+</html>
