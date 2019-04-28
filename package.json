@@ -4,7 +4,8 @@
   "description": "A simple web app for tickets, made with nodejs!",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "keywords": [
     "cmps415",

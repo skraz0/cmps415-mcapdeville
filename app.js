@@ -2,7 +2,6 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var app = express();
-var port = process.env.port || 3000;
 
 app.set('view engine', 'ejs');
 
@@ -46,5 +45,5 @@ app.post('/rest/ticket', urlencodedParser, function(req, res){
   }
 });
 
-app.listen(port);
+app.listen(process.env.PORT);
 console.log('Listening on port 3000...');
