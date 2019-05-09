@@ -1,4 +1,5 @@
-heroku link: https://cmps415-mcapdeville.herokuapp.com/
+phase 1 link: https://cmps415-mcapdeville.herokuapp.com/
+phase 2 and 3 link: https://phase2test-mcap.herokuapp.com/
 
 Unfortunately I did wait to the last minute and tried my best to get it done, but in the end here I am at 3:30am. Almost 4 hours past the due time. LOL
 
